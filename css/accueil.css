@@ -1,0 +1,33 @@
+
+
+/* Les activités */
+
+
+.carousel-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    border-bottom: 2px solid #C3912E;
+    border-top: 2px solid #C3912E;
+}
+
+.container-activités{
+    border-left: 2px solid #C3912E;
+    padding: 0 20px;
+}
+
+.image-activité{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Les valeurs */
+
+#valeurs{
+    border: 2px solid #C3912E;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
