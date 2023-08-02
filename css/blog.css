@@ -1,0 +1,116 @@
+/* Styles pour la section de recherche */
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search label {
+    font-size: 16px;
+}
+
+.search input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles pour la section de filtrage */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters label,
+.filters select {
+    font-size: 16px;
+}
+
+
+/* Les articles */
+
+#articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article {
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.article h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.article p {
+    color: #666;
+}
+
+.suite-article {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #C3912E;
+}
+
+.suite-article a {
+    color: #C3912E;
+}
+
+/* Styles pour les images d'articles */
+.image-article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Styles pour la pagination */
+#pagination {
+    text-align: center;
+}
+
+#pagination button {
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagination button:hover {
+    background-color: #ccc;
+}
+
+
+/* Pagination */
+
+#pagination {
+    text-align: center;
+}
+
+#pagination button {
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagination button:hover {
+    background-color: #ccc;
+}
