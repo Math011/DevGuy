@@ -19,8 +19,8 @@
         <img id="image-logo" src="assets/images/logo.png" alt="Logo de la marque">
 
         <ul id="liste-header">
-            <li><a class="menu droite" href="accueil.html" style="color:#C3912E;">Accueil</a></li>
-            <li><a class="menu" href="#">Blog</a></li>
+            <li><a class="menu droite" href="accueil.html">Accueil</a></li>
+            <li><a class="menu" href="blog.html" style="color:#C3912E;">Blog</a></li>
         </ul>
     </div>
 
@@ -29,40 +29,35 @@
 <body>
     <br><br><br><br>
 
-    <h1>Nos articles</h1>
+    <h1 id="titre-article">Nos articles</h1>
 
-    <div class="search">
-        <label for="searchInput">Recherche:</label>
-        <input type="text" id="searchInput" placeholder="Rechercher un article...">
-    </div>
-
-    <div class="filters">
-        <label for="filterCategory">Filtrer par catégorie:</label>
-        <select id="filterCategory">
-            <option value="all">Toutes les catégories</option>
-            <option value="environnement">Environnement</option>
-            <option value="innovation">Innovation</option>
-            <!-- Ajoutez d'autres catégories ici -->
-        </select>
+    <div id="search-and-filters">
+        <div class="filters">
+            <select id="filterCategory">
+                <option value="all">Toutes les catégories</option>
+                <option value="environnement">Environnement</option>
+                <option value="innovation">Innovation</option>
+            </select>
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Rechercher un article...">
+        </div>
     </div>
 
     <div id="articles">
-        <!-- Article 1 -->
-        <div class="article environnement">
+        <div class="article innovation">
             <img class="image-article" src="assets/images/blogEcolo.webp">
             <h2>Les nouvelles tendances dans le domaine du BTP</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
                 Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
                 sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
                 ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
-                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat...</p>
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
             <div class="suite-article">
                 <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
             </div>
-
         </div>
 
-        <!-- Article 2 -->
         <div class="article environnement">
             <img class="image-article" src="assets/images/blogEcolo.webp">
             <h2>Les matériaux de construction écologiques</h2>
@@ -70,7 +65,7 @@
                 Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
                 sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
                 ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
-                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat...</p>
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
             <div class="suite-article">
                 <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
             </div>
@@ -83,7 +78,7 @@
                 Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
                 sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
                 ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
-                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat...</p>
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
             <div class="suite-article">
                 <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
             </div>
@@ -91,12 +86,12 @@
 
         <div class="article environnement">
             <img class="image-article" src="assets/images/blogEcolo.webp">
-            <h2>Les matériaux de construction écologiques</h2>
+            <h2>Article 4</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
                 Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
                 sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
                 ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
-                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat...</p>
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
 
             <div class="suite-article">
                 <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
@@ -105,28 +100,110 @@
 
         <div class="article environnement">
             <img class="image-article" src="assets/images/blogEcolo.webp">
-            <h2>Les nouvelles tendances dans le domaine du BTP</h2>
+            <h2>Article 5</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
                 Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
                 sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
                 ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
-                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat...</p>
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
             <div class="suite-article">
                 <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
             </div>
         </div>
 
-        <!-- Article 2 -->
+        <div class="article environnement">
+            <img class="image-article" src="assets/images/blogEcolo.webp">
+            <h2>Article 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
+                Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
+                sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
+                ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
+            <div class="suite-article">
+                <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
+            </div>
+        </div>
 
+        <div class="article innovation">
+            <img class="image-article" src="assets/images/blogEcolo.webp">
+            <h2>Article 7</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
+                Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
+                sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
+                ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
+            <div class="suite-article">
+                <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
+            </div>
+        </div>
 
+        <div class="article environnement">
+            <img class="image-article" src="assets/images/blogEcolo.webp">
+            <h2>Article 8</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
+                Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
+                sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
+                ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
+            <div class="suite-article">
+                <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
+            </div>
+        </div>
 
-        <!-- Ajoutez d'autres articles ici -->
+        <div class="article innovation">
+            <img class="image-article" src="assets/images/blogEcolo.webp">
+            <h2>Article 9</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
+                Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
+                sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
+                ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
+            <div class="suite-article">
+                <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
+            </div>
+        </div>
+
+        <div class="article environnement">
+            <img class="image-article" src="assets/images/blogEcolo.webp">
+            <h2>Article 10</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac nunc quis libero euismod cursus.
+                Vestibulum euismod eleifend nisi, vel gravida felis elementum nec. Cras at dapibus felis. Nullam vitae
+                sapien at mi luctus posuere. Vestibulum auctor turpis at magna auctor malesuada. Nulla facilisi. Ut
+                ullamcorper, purus a dignissim luctus, dui dolor vestibulum est, vitae feugiat nisi nunc nec ipsum. Sed
+                congue laoreet dolor id vestibulum. Aenean posuere malesuada consequat</p>
+            <div class="suite-article">
+                <a href="#">Lire la suite <iconify-icon icon="solar:arrow-right-linear"></iconify-icon> </a>
+            </div>
+        </div>
 
     </div>
 
-    <div id="pagination">
-        <!-- Les boutons de pagination seront ajoutés ici par JavaScript -->
-    </div>
+
+    <div id="pagination"></div>
+
+    <footer>
+        <div id="footer">
+            <div id="reseaux-sociaux">
+                <p>Mes réseaux sociaux : </p>
+                <a href="https://www.linkedin.com/company/devguys/">
+                    <iconify-icon icon="bi:linkedin" id="linkedin"></iconify-icon>
+                </a>
+                <a href="https://www.facebook.com/devguys.fr">
+                    <iconify-icon icon="uil:facebook" id="facebook"></iconify-icon>
+                </a>
+            </div>
+
+            <div id="droit">
+                <p>Tabat |</p>
+                <p>© 2023 Tous droits réservés</p>
+            </div>
+
+            <a id="mentions-legales" href="#">
+                <p>Mentions légales</p>
+            </a>
+
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 

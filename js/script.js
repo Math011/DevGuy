@@ -1,4 +1,4 @@
-const itemsPerPage = 2;
+const itemsPerPage = 6;
 let currentPage = 1;
 
 function displayArticles(pageNumber) {
@@ -22,15 +22,42 @@ function updatePagination() {
 
     const totalPages = Math.ceil(articlesElements.length / itemsPerPage);
 
+    // Bouton "Précédent"
+    const prevButton = document.createElement("button");
+    prevButton.textContent = "Précédent";
+    prevButton.disabled = currentPage === 1;
+    prevButton.addEventListener("click", () => {
+        currentPage--;
+        displayArticles(currentPage);
+        updatePagination();
+    });
+    pagination.appendChild(prevButton);
+
     for (let i = 1; i <= totalPages; i++) {
         const button = document.createElement("button");
         button.textContent = i;
+        button.classList.add("pagination-button"); // Ajout de la classe pour les boutons numérotés
+        if (i === currentPage) {
+            button.classList.add("active"); // Ajout de la classe pour la page actuelle
+        }
         button.addEventListener("click", () => {
             currentPage = i;
             displayArticles(currentPage);
+            updatePagination();
         });
         pagination.appendChild(button);
     }
+
+    // Bouton "Suivant"
+    const nextButton = document.createElement("button");
+    nextButton.textContent = "Suivant";
+    nextButton.disabled = currentPage === totalPages;
+    nextButton.addEventListener("click", () => {
+        currentPage++;
+        displayArticles(currentPage);
+        updatePagination();
+    });
+    pagination.appendChild(nextButton);
 }
 
 function updateCategoryFilter() {
@@ -72,9 +99,19 @@ function updateSearchFilter() {
                 articleElement.style.display = "none";
             }
         });
-
         currentPage = 1;
         updatePagination();
+    });
+}
+
+
+function limitContentTo150Chars() {
+    const paragraphs = document.querySelectorAll(".article p");
+    paragraphs.forEach((paragraph) => {
+        const content = paragraph.textContent;
+        if (content.length > 150) {
+            paragraph.textContent = content.slice(0, 150) + "...";
+        }
     });
 }
 
@@ -83,4 +120,5 @@ window.addEventListener("DOMContentLoaded", () => {
     updatePagination();
     updateCategoryFilter();
     updateSearchFilter();
+    limitContentTo150Chars();
 });

@@ -1,0 +1,21 @@
+/* footer */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #3A3A3B;
+    color: white;
+
+}
+
+#linkedin,
+#facebook {
+    color: white !important;
+    font-size: 30px;
+
+}
+
+#mentions-legales {
+    color: white;
+}

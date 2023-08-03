@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,23 @@
     <link rel="stylesheet" media="screen" type="text/css" href="css/accueil.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    
+
 </head>
 
 
 <header>
     <div id="header">
-    
+
         <img id="image-logo" src="assets/images/logo.png" alt="Logo de la marque">
 
         <ul id="liste-header">
             <li><a class="menu droite" href="accueil.html" style="color:#C3912E;">Accueil</a></li>
-            <li><a class="menu" href="#">Blog</a></li>
+            <li><a class="menu" href="blog.html">Blog</a></li>
         </ul>
     </div>
 
 </header>
 
- 
 <body>
     <br><br><br><br>
 
@@ -38,38 +38,40 @@
 
         <div class="container-activités">
             <h3 class="titre-activité">GROS-OEUVRE</h3>
-            <img class="image-activité" src="assets/images/gros-oeuvre.jpg" alt="image pour l'activité gros oeuvre"></img>
+            <img class="image-activité" src="assets/images/gros-oeuvre.jpg"
+                alt="image pour l'activité gros oeuvre"></img>
             <p class="texte-activité">Les travaux de gros-œuvre désignent la construction de l’ossature de l’ouvrage</p>
         </div>
 
         <div class="container-activités">
             <h3 class="titre-activité">SCIAGE</h3>
             <img class="image-activité" src="assets/images/sciage.webp" alt="image pour l'activité sciage"></img>
-            <p class="texte-activité">Le sciage béton est une technique de découpe permettant tous types de réalisations murales et sols</p>
+            <p class="texte-activité">Le sciage béton est une technique de découpe permettant tous types de réalisations
+                murales et sols</p>
         </div>
 
 
         <div class="container-activités">
             <h3 class="titre-activité">CAROTTAGE</h3>
             <img class="image-activité" src="assets/images/carottage.jpg" alt="image pour l'activité carottage"></img>
-            <p class="texte-activité">Le carottage permet d’effectuer des perçages verticaux et horizontaux de différents diamètres</p>
+            <p class="texte-activité">Le carottage permet d’effectuer des perçages verticaux et horizontaux de
+                différents diamètres</p>
         </div>
 
 
         <div class="container-activités">
             <h3 class="titre-activité">DÉMOLITION</h3>
             <img class="image-activité" src="assets/images/demolition.jpg" alt="image pour l'activité démolition"></img>
-            <p class="texte-activité">Les travaux de démolition consistent à détruire un ouvrage (béton, bois, métallique)</p>
+            <p class="texte-activité">Les travaux de démolition consistent à détruire un ouvrage (béton, bois,
+                métallique)</p>
         </div>
 
         <div class="container-activités">
             <h3 class="titre-activité">CURAGE</h3>
             <img class="image-activité" src="assets/images/curage.jpg" alt="image pour l'activité curage"></img>
-            <p class="texte-activité">Le curage consiste en la démolition partielle d’un bâtiment dans le but de réaliser des travaux de rénovation ou de préparer une démolition</p>
+            <p class="texte-activité">Le curage consiste en la démolition partielle d’un bâtiment dans le but de
+                réaliser des travaux de rénovation ou de préparer une démolition</p>
         </div>
-
-        
-
 
     </div>
 
@@ -88,11 +90,29 @@
 
     </div>
 
+    <footer>
+        <div id="footer">
+            <div id="reseaux-sociaux">
+                <p>Mes réseaux sociaux : </p>
+                <a href="https://www.linkedin.com/company/devguys/">
+                    <iconify-icon icon="bi:linkedin" id="linkedin"></iconify-icon>
+                </a>
+                <a href="https://www.facebook.com/devguys.fr">
+                    <iconify-icon icon="uil:facebook" id="facebook"></iconify-icon>
+                </a>
+            </div>
 
+            <div id="droit">
+                <p>Tabat |</p>
+                <p>© 2023 Tous droits réservés</p>
+            </div>
 
+            <a id="mentions-legales" href="#">
+                <p>Mentions légales</p>
+            </a>
 
-
-
+        </div>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -100,18 +120,15 @@
 
 
     <script type="text/javascript">
-     
-
-            $('.carousel-container').slick({
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 3
-                });
-
-
+        $('.carousel-container').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
     </script>
 
 
-    
+
 </body>
+
 </html>
