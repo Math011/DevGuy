@@ -33,47 +33,62 @@
 
     <h2>Nos services</h2>
 
+    <div class="trait"></div>
 
     <div class="carousel-container">
-
         <div class="container-activités">
-            <h3 class="titre-activité">GROS-OEUVRE</h3>
             <img class="image-activité" src="assets/images/gros-oeuvre.jpg"
                 alt="image pour l'activité gros oeuvre"></img>
+            <h3 class="titre-activité">GROS-OEUVRE</h3>
             <p class="texte-activité">Les travaux de gros-œuvre désignent la construction de l’ossature de l’ouvrage</p>
+            <div class="btn-center">
+                <a href="#" class="en-savoir-plus">En savoir plus</a>
+            </div>
         </div>
 
         <div class="container-activités">
+            <img class="image-activité" src="assets/images/gros-oeuvre.jpg" alt="image pour l'activité sciage"></img>
             <h3 class="titre-activité">SCIAGE</h3>
-            <img class="image-activité" src="assets/images/sciage.webp" alt="image pour l'activité sciage"></img>
             <p class="texte-activité">Le sciage béton est une technique de découpe permettant tous types de réalisations
                 murales et sols</p>
+            <div class="btn-center">
+                <a href="#" class="en-savoir-plus">En savoir plus</a>
+            </div>
         </div>
 
-
         <div class="container-activités">
+            <img class="image-activité" src="assets/images/gros-oeuvre.jpg" alt="image pour l'activité carottage"></img>
             <h3 class="titre-activité">CAROTTAGE</h3>
-            <img class="image-activité" src="assets/images/carottage.jpg" alt="image pour l'activité carottage"></img>
             <p class="texte-activité">Le carottage permet d’effectuer des perçages verticaux et horizontaux de
                 différents diamètres</p>
+            <div class="btn-center">
+                <a href="#" class="en-savoir-plus">En savoir plus</a>
+            </div>
         </div>
 
-
         <div class="container-activités">
+            <img class="image-activité" src="assets/images/gros-oeuvre.jpg"
+                alt="image pour l'activité démolition"></img>
             <h3 class="titre-activité">DÉMOLITION</h3>
-            <img class="image-activité" src="assets/images/demolition.jpg" alt="image pour l'activité démolition"></img>
             <p class="texte-activité">Les travaux de démolition consistent à détruire un ouvrage (béton, bois,
                 métallique)</p>
+            <div class="btn-center">
+                <a href="#" class="en-savoir-plus">En savoir plus</a>
+            </div>
         </div>
 
         <div class="container-activités">
+            <img class="image-activité" src="assets/images/gros-oeuvre.jpg" alt="image pour l'activité curage"></img>
             <h3 class="titre-activité">CURAGE</h3>
-            <img class="image-activité" src="assets/images/curage.jpg" alt="image pour l'activité curage"></img>
             <p class="texte-activité">Le curage consiste en la démolition partielle d’un bâtiment dans le but de
                 réaliser des travaux de rénovation ou de préparer une démolition</p>
+            <div class="btn-center">
+                <a href="#" class="en-savoir-plus">En savoir plus</a>
+            </div>
         </div>
-
     </div>
+
+    <div class="trait"></div>
 
     <div id="container-valeur">
         <h2 id="titre-valeurs">Nos valeurs</h2>
@@ -120,11 +135,43 @@
 
 
     <script type="text/javascript">
-        $('.carousel-container').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-        });
+        var windowWidth = window.innerWidth;
+
+
+        if (windowWidth >= 1024) {
+            $('.carousel-container').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        } else {
+            $('.carousel-container').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        }
+
+        function equalizeHeights() {
+            const containerActivitesList = document.querySelectorAll('.container-activités');
+            let maxHeight = 0;
+
+            containerActivitesList.forEach((container) => {
+                const height = container.offsetHeight;
+                if (height > maxHeight) {
+                    maxHeight = height;
+                }
+            });
+
+
+            containerActivitesList.forEach((container) => {
+                container.style.height = maxHeight + 'px';
+            });
+        }
+
+
+        window.addEventListener('load', equalizeHeights);
+        window.addEventListener('resize', equalizeHeights);
     </script>
 
 
