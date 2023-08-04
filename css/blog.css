@@ -2,68 +2,68 @@
 
 #titre-article {
     margin-left: 3%;
-  }
-  
-  
-  #search-and-filters {
+}
+
+
+#search-and-filters {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60%;
     margin: 0 auto;
-  }
-  
-  /* Styles pour la section de recherche */
-  .search {
+}
+
+/* Styles pour la section de recherche */
+.search {
     text-align: center;
     margin-bottom: 20px;
     flex: 1;
     flex-grow: 1;
-  }
-  
-  #searchInput {
+}
+
+#searchInput {
     width: 100%;
     box-sizing: border-box;
-  }
-  
-  .search label {
+}
+
+.search label {
     font-size: 16px;
-  }
-  
-  .search input {
+}
+
+.search input {
     font-size: 16px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 0 5px 5px 0;
-  }
-  
-  /* Styles pour la section de filtrage */
-  .filters {
+}
+
+/* Styles pour la section de filtrage */
+.filters {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .filters label,
-  .filters select {
+}
+
+.filters label,
+.filters select {
     font-size: 14px;
     color: #5D5E62;
     padding: 6px 0;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
-  }
-  
-  
-  /* Les articles */
-  
-  #articles {
+}
+
+
+/* Les articles */
+
+#articles {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .article {
+}
+
+.article {
     position: relative;
     width: 30%;
     margin: 15px;
@@ -71,58 +71,58 @@
     border-radius: 10px;
     padding-bottom: 30px;
     transition: transform .300s;
-  }
-  
-  .article:hover{
+}
+
+.article:hover {
     transform: scale(1.05);
-  }
-  
-  .article>h2,
-  .article>p,
-  div.suite-article>a {
+}
+
+.article>h2,
+.article>p,
+div.suite-article>a {
     padding: 0 10px;
-  }
-  
-  
-  .article h2 {
+}
+
+
+.article h2 {
     color: #333;
     margin-top: 0;
     margin-bottom: 10px;
-  }
-  
-  .article p {
+}
+
+.article p {
     color: #666;
-  }
-  
-  
-  .suite-article {
+}
+
+
+.suite-article {
     position: absolute;
     bottom: 10px;
     right: 10px;
-  }
-  
-  .suite-article a {
+}
+
+.suite-article a {
     color: #C3912E;
-  }
-  
-  
-  
-  /* Styles pour les images d'articles */
-  .image-article {
+}
+
+
+
+/* Styles pour les images d'articles */
+.image-article {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-  }
-  
-  /* Styles pour la pagination */
-  #pagination {
+}
+
+/* Styles pour la pagination */
+#pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-  }
-  
-  #pagination button {
+}
+
+#pagination button {
     margin: 0;
     border: none;
     background: none;
@@ -132,218 +132,220 @@
     border: 1px solid grey;
     border-radius: 5px;
     margin: 0 1px;
-  }
-  
-  #pagination button:hover {
+}
+
+#pagination button:hover {
     background-color: #C3912E;
     border: 1px solid #C3912E;
     color: white;
-  }
-  
-  #pagination button.active {
+}
+
+#pagination button.active {
     background-color: #C3912E;
     color: white;
     border: 1px solid #C3912E;
     border-radius: 5px;
-  }
-  
-  
-  /* Pagination */
-  
-  #pagination {
-    text-align: center;
-  }
-  
-  
-  @media screen and (max-width: 1024px) {
-  
-    /* les articles */
-  
-    .article {
-      width: 45%;
-    }
-  }
-  
-  
-  @media screen and (max-width: 767px) {
-  
-    /* les articles */
-  
-    .article {
-      width: 80%;
-    }
-  }/* titre */
-
-#titre-article {
-  margin-left: 3%;
-}
-
-
-#search-and-filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  margin: 0 auto;
-}
-
-/* Styles pour la section de recherche */
-.search {
-  text-align: center;
-  margin-bottom: 20px;
-  flex: 1;
-  flex-grow: 1;
-}
-
-#searchInput {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.search label {
-  font-size: 16px;
-}
-
-.search input {
-  font-size: 16px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 0 5px 5px 0;
-}
-
-/* Styles pour la section de filtrage */
-.filters {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.filters label,
-.filters select {
-  font-size: 14px;
-  color: #5D5E62;
-  padding: 6px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-}
-
-
-/* Les articles */
-
-#articles {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.article {
-  position: relative;
-  width: 30%;
-  margin: 15px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding-bottom: 30px;
-  transition: transform .300s;
-}
-
-.article:hover{
-  transform: scale(1.05);
-}
-
-.article>h2,
-.article>p,
-div.suite-article>a {
-  padding: 0 10px;
-}
-
-
-.article h2 {
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.article p {
-  color: #666;
-}
-
-
-.suite-article {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.suite-article a {
-  color: #C3912E;
-}
-
-
-
-/* Styles pour les images d'articles */
-.image-article {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Styles pour la pagination */
-#pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-
-#pagination button {
-  margin: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 16px;
-  border: 1px solid grey;
-  border-radius: 5px;
-  margin: 0 1px;
-}
-
-#pagination button:hover {
-  background-color: #C3912E;
-  border: 1px solid #C3912E;
-  color: white;
-}
-
-#pagination button.active {
-  background-color: #C3912E;
-  color: white;
-  border: 1px solid #C3912E;
-  border-radius: 5px;
 }
 
 
 /* Pagination */
 
 #pagination {
-  text-align: center;
+    text-align: center;
 }
 
 
 @media screen and (max-width: 1024px) {
 
-  /* les articles */
+    /* les articles */
 
-  .article {
-    width: 45%;
-  }
+    .article {
+        width: 45%;
+    }
 }
 
 
 @media screen and (max-width: 767px) {
 
-  /* les articles */
+    /* les articles */
 
-  .article {
-    width: 80%;
-  }
+    .article {
+        width: 80%;
+    }
+}
+
+/* titre */
+
+#titre-article {
+    margin-left: 3%;
+}
+
+
+#search-and-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Styles pour la section de recherche */
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
+    flex-grow: 1;
+}
+
+#searchInput {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search label {
+    font-size: 16px;
+}
+
+.search input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Styles pour la section de filtrage */
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters label,
+.filters select {
+    font-size: 14px;
+    color: #5D5E62;
+    padding: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+
+/* Les articles */
+
+#articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article {
+    position: relative;
+    width: 30%;
+    margin: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-bottom: 30px;
+    transition: transform .300s;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+.article>h2,
+.article>p,
+div.suite-article>a {
+    padding: 0 10px;
+}
+
+
+.article h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.article p {
+    color: #666;
+}
+
+
+.suite-article {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.suite-article a {
+    color: #C3912E;
+}
+
+
+
+/* Styles pour les images d'articles */
+.image-article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Styles pour la pagination */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#pagination button {
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0 1px;
+}
+
+#pagination button:hover {
+    background-color: #C3912E;
+    border: 1px solid #C3912E;
+    color: white;
+}
+
+#pagination button.active {
+    background-color: #C3912E;
+    color: white;
+    border: 1px solid #C3912E;
+    border-radius: 5px;
+}
+
+
+/* Pagination */
+
+#pagination {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /* les articles */
+
+    .article {
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    /* les articles */
+
+    .article {
+        width: 80%;
+    }
 }
