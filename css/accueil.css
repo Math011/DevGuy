@@ -1,3 +1,10 @@
+/*  titre */
+
+.title-accueil{
+    text-align: center;
+    font-size: 30px;
+}
+
 /* Les activités */
 
 
@@ -9,8 +16,7 @@
 }
 .carousel-container {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -61,10 +67,41 @@
 
 /* Les valeurs */
 
+#container-valeur{  
+    margin: 80px auto 40px auto;
+    width: 25%;
+}
+
 #valeurs {
     border: 2px solid #C3912E;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 20px;
+}
+
+.titre-valeur{
+    font-size: 25px;
+}
+
+/* contact */
+
+#container-contact{
+    
+    width: 80%;
+    margin: 0 auto 20px auto;
+    padding: 15px 40px 10px 40px;
+    background-color: grey;
+    color: white;
+
+}
+
+.info-contact{
+    text-align: center;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+#phone, #mail, #place, #hour{
+    font-size: 40px;
 }
