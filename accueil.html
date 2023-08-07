@@ -11,6 +11,7 @@
     <link rel="stylesheet" media="screen" type="text/css" href="css/accueil.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
     <!--  iconify  -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -40,13 +41,12 @@
 
     <div id="container-presentation-entreprise">
 
-        <div id="container-image-presentation">
+        <div id="container-image-presentation" data-aos="fade-up" data-aos-duration="1500">
             <img id="image-presentation" src="assets/images/carottage.jpg" alt="image de présentation d'entreprise">
         </div>
 
         <div id="presentation-entreprise">
-            <h1 id="titre-entreprise">Société Tabat, entreprise de bâtiment à Strasbourg dans le Grand-Est
-                element_fubat</h1>
+            <h1 id="titre-entreprise">Société Tabat, entreprise de bâtiment à Strasbourg dans le Grand-Est</h1>
             <p class="texte-presentation"><b>Tabat</b> est une entreprise spécialisée dans le domaine du bâtiment,
                 offrant une gamme complète de services allant de la conception à la réalisation de projets.</p>
             <p class="texte-presentation">Nous sommes experts dans plusieurs domaines, notamment le gros-œuvre, le
@@ -62,11 +62,11 @@
         </div>
     </div>
 
-    <h2>Nos services</h2>
+    <h2 class="title-accueil" data-aos="fade-up" data-aos-duration="1500">Nos services</h2>
 
-    <div class="trait"></div>
+    <div class="trait" data-aos="fade-up" data-aos-duration="1500"></div>
 
-    <div class="carousel-container">
+    <div class="carousel-container" data-aos="fade-up" data-aos-duration="1500">
         <div class="container-activités">
             <img class="image-activité" src="assets/images/sciage.webp" alt="image pour l'activité gros oeuvre"></img>
             <h3 class="titre-activité">GROS-OEUVRE</h3>
@@ -119,7 +119,7 @@
 
     <div class="trait"></div>
 
-    <div id="container-valeur">
+    <div id="container-valeur" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="title-accueil">Nos valeurs</h2>
 
         <div id="valeurs">
@@ -132,7 +132,7 @@
         </div>
     </div>
 
-    <div id="container-contact">
+    <div id="container-contact" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="title-accueil">Contact</h2>
         <div id="contact">
             <div class="info-contact">
@@ -184,6 +184,11 @@
     </footer>
 
     <script type="text/javascript" src="js/accueil.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
