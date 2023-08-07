@@ -1,25 +1,85 @@
-/*  titre */
+/*  présentation de l'entreprise */
 
-.title-accueil{
-    text-align: center;
-    font-size: 30px;
+#container-presentation-entreprise {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
 }
+
+#container-image-presentation {
+    position: relative;
+    width: 30%;
+}
+
+#container-image-presentation::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(195, 145, 46, 0.8);
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    top: 20px;
+}
+
+#image-presentation {
+    width: 100%;
+    height: auto;
+
+}
+
+#presentation-entreprise {
+    margin-left: 7%;
+    width: 40%;
+}
+
+#titre-entreprise {
+    margin: 0px;
+}
+
+.texte-presentation {
+    font-size: 17px;
+}
+
+#btn-presentation {
+    bottom: 10px;
+    right: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#en-savoir-plus-entreprise {
+    padding: 8px 16px;
+    border: 3px solid #5D5E62;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#en-savoir-plus-entreprise:hover {
+    color: white;
+    background-color: #5D5E62;
+}
+
+
 
 /* Les activités */
 
-
-.trait{
+.trait {
     max-width: 60%;
     width: 100%;
     margin: 0 auto;
     border-bottom: 2px solid #C3912E;
 }
+
 .carousel-container {
     width: 80%;
     margin: 0 auto;
 }
 
-.slick-prev:before, .slick-next:before{
+.slick-prev:before,
+.slick-next:before {
     color: black !important;
 }
 
@@ -29,7 +89,7 @@
 }
 
 .container-activités>p {
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
 
@@ -42,7 +102,7 @@
     margin-top: 10px;
 }
 
-.btn-center{
+.btn-center {
     position: absolute;
     bottom: 10px;
     right: 20px;
@@ -52,13 +112,13 @@
 }
 
 .en-savoir-plus {
-    right: 20px; 
+    right: 20px;
     background-color: #C3912E;
     color: white;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .en-savoir-plus:hover {
