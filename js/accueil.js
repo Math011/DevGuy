@@ -1,6 +1,5 @@
 var windowWidth = window.innerWidth;
 
-
 if (windowWidth >= 1024) {
     $('.carousel-container').slick({
         infinite: true,
@@ -26,12 +25,11 @@ function equalizeHeights() {
         }
     });
 
-
     containerActivitesList.forEach((container) => {
         container.style.height = maxHeight + 'px';
     });
 }
 
-
 window.addEventListener('load', equalizeHeights);
 window.addEventListener('resize', equalizeHeights);
+

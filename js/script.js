@@ -22,7 +22,7 @@ function updatePagination() {
 
     const totalPages = Math.ceil(articlesElements.length / itemsPerPage);
 
-    // Bouton "Précédent"
+    // Bouton "précédent"
     const prevButton = document.createElement("button");
     prevButton.textContent = "Précédent";
     prevButton.disabled = currentPage === 1;
@@ -36,9 +36,9 @@ function updatePagination() {
     for (let i = 1; i <= totalPages; i++) {
         const button = document.createElement("button");
         button.textContent = i;
-        button.classList.add("pagination-button"); // Ajout de la classe pour les boutons numérotés
+        button.classList.add("pagination-button");
         if (i === currentPage) {
-            button.classList.add("active"); // Ajout de la classe pour la page actuelle
+            button.classList.add("active");
         }
         button.addEventListener("click", () => {
             currentPage = i;
